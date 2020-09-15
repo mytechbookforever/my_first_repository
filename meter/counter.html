@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    meter {
+      font-size: 40px;
+
+    }
+
+    summary {
+  outline: none
+
+    }
+
+  </style>
+</head>
+<body>
+  <details>
+    <summary>heading</summary>
+    <p>mooi</p>
+  </details>
+<meter id="val" value="50" min="0" max="100"></meter>
+<div  id="number"></div>
+<progress></progress>
+<bdi></bdi>
+<script>
+let val =  document.getElementById("val").value = "0";
+let number = document.getElementById("number");
+setInterval(oke , 1000);
+
+function oke () {
+val++;
+number.innerHTML = val;
+if(val == 100){
+test();
+
+
+
+}
+let v = val
+ document.getElementById("val").value = v;
+
+}
+function test() {
+clearInterval(val)
+  number.innerHTML = "downloading done";
+val = "";
+}
+</script>
+</body>
+</html>

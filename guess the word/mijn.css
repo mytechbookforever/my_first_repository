@@ -1,0 +1,85 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+
+}
+body{
+background-color: rgb(5, 14, 55);
+}
+.green  {
+background: rgb(71, 228, 105);
+padding:5px;
+border-radius: 10px;
+color:black;
+}
+.gray {
+background-color: rgb(19, 36, 54);
+width: 40vw;
+padding: 15px;
+border-radius: 15px;
+color:rgb(140, 241, 235);
+font-size: 35px;
+
+
+}
+#message , #count{
+margin-top: 20px;
+}
+.not {
+background-color: rgb(233, 72, 72);
+font-size: 35px;
+padding: 3rem 0;
+text-align: center;
+}
+.input {
+background-color: black;
+font-size: 3rem;
+color: #fff;
+outline: 5px solid rgb(52, 214, 209);
+padding: 1rem;
+
+}
+.btn:focus {
+outline: none;
+}
+.btn {
+display: inline-block;
+width:150px;
+height:40px;
+border-radius: 40px;
+background-color: black;
+color:#fff;
+margin-top: 20px;
+}
+.letter {
+text-shadow: 10px 10px 15px  black;
+}
+.arr {
+background:#ccc;
+text-align: center;
+width:300px;
+padding: 1rem 0;
+}
+.count {
+background:red;
+display:inline-block;
+padding:3rem;
+font-size: 3rem;
+}
+.container {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+height: 100vh;
+
+}
+.background{
+background: rgb(57, 172, 184);
+padding: 3rem;
+}
+.text {
+color:#fff;
+text-shadow:  10px 10px 15px #fff;
+}

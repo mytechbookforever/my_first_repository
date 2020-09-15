@@ -1,0 +1,24 @@
+body {
+background: rgb(53, 108, 191);
+}
+
+.sel {
+background-color:#000;
+color:#fff;
+width:300px;
+text-align: center;
+}
+
+input[type="text"] {
+background:rgb(95, 175, 193);
+font-size: 2rem;
+}
+
+
+
+.calc_result {
+font-size: 3rem;
+color:#fff;
+position: relative;
+left:25%;
+}

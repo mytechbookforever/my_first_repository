@@ -1,5 +1,5 @@
 let doc = document.getElementById("doc");
-
+doc.classList.add("calc_result")
 
 
 function fun() {
@@ -10,7 +10,9 @@ for(let i = 0; i < x.length; i++){
 x[i].onclick = function () {
 if(this.value == "plus"){
 plus()
-}// if end
+}else if(this.value == "min"){
+min();
+}
 }//onclick end
 }//for llop end
 }//fun end
@@ -21,4 +23,13 @@ let two = document.getElementById("twee").value;
 let doc = document.getElementById("doc").innerHTML = Number(one) + Number(two);
 
 doc.innerHTML =  one;
+}
+
+
+function min () {
+let one = document.getElementById("een").value;
+let two = document.getElementById("twee").value;
+let doc = document.getElementById("doc").innerHTML = Number(one) - Number(two);
+
+doc.innerHTML =  one
 }

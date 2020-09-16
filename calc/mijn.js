@@ -12,6 +12,8 @@ if(this.value == "plus"){
 plus()
 }else if(this.value == "min"){
 min();
+}else if (this.value == "keer"){
+keer();
 }
 }//onclick end
 }//for llop end
@@ -30,6 +32,14 @@ function min () {
 let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
 let doc = document.getElementById("doc").innerHTML = Number(one) - Number(two);
+
+doc.innerHTML =  one
+}
+
+function keer () {
+let one = document.getElementById("een").value;
+let two = document.getElementById("twee").value;
+let doc = document.getElementById("doc").innerHTML = Number(one) * Number(two);
 
 doc.innerHTML =  one
 }

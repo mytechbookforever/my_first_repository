@@ -7,11 +7,18 @@ background-color:#000;
 color:#fff;
 width:300px;
 text-align: center;
-}
+height:16rem;
+font-size: 2rem;
 
+
+}
+.sel option {
+margin-top: 1.5rem;
+}
 input[type="text"] {
 background:rgb(95, 175, 193);
 font-size: 2rem;
+
 }
 
 

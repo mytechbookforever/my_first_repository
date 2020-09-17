@@ -1,4 +1,4 @@
-let doc = document.getElementById("doc");
+
 doc.classList.add("calc_result")
 
 
@@ -27,7 +27,7 @@ let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
 let c =  one +"+"+ two + "=";
 let res = Number(one) + Number(two);
-doc.innerHTML =   c  + res
+out(c , res);
 }
 
 
@@ -37,7 +37,7 @@ function min () {
   let two = document.getElementById("twee").value;
 let c =  one +"-"+ two + "=";
 let res = Number(one) - Number(two);
-doc.innerHTML =   c  + res;
+out(c , res);
 }
 
 function keer () {
@@ -45,7 +45,7 @@ let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
 let c =  one +"*"+ two + "=";
 let res = Number(one) * Number(two);
-doc.innerHTML =   c  + res;
+out(c , res);
 }
 
 function deel () {
@@ -53,5 +53,10 @@ let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
 let c =  one +"/"+ two + "=";
 let res = Number(one) / Number(two);
-doc.innerHTML =   c  + res;
+
+out(c , res);
+}
+function out (e, res) {
+let doc = document.getElementById("doc").innerHTML  = e + res;
+
 }

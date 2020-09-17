@@ -1,7 +1,9 @@
 body {
 background: rgb(53, 108, 191);
 }
-
+::selection {
+  background: #ffb7b7;
+}
 .sel {
 background-color:#000;
 color:#fff;
@@ -9,8 +11,15 @@ width:300px;
 text-align: center;
 height:16rem;
 font-size: 2rem;
-
-
+}
+option:checked {
+    box-shadow: 0 0 10px 100px rgb(67, 221, 161) inset;
+}
+.sel option:nth-child(even):hover {
+background:rgb(118, 230, 189);
+}
+.sel option:nth-child(odd):hover {
+background:rgb(26, 109, 144);
 }
 .sel option {
 margin-top: 1.5rem;
@@ -28,4 +37,5 @@ font-size: 3rem;
 color:#fff;
 position: relative;
 left:25%;
+
 }

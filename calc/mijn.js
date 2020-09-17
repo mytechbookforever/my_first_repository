@@ -5,7 +5,7 @@ doc.classList.add("calc_result")
 function fun() {
 
 
-  var x = document.getElementById("mySelect").options;
+var x = document.getElementById("mySelect").options;
 
 for(let i = 0; i < x.length; i++){
 x[i].onclick = function () {
@@ -16,7 +16,7 @@ min();
 }else if (this.value == "keer"){
 keer();
 }else if(this.value == "deel"){
-deel();  
+deel();
 }
 }//onclick end
 }//for llop end
@@ -25,32 +25,33 @@ deel();
 function plus () {
 let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
-let doc = document.getElementById("doc").innerHTML = Number(one) + Number(two);
-
-doc.innerHTML =  one;
+let c =  one +"+"+ two + "=";
+let res = Number(one) + Number(two);
+doc.innerHTML =   c  + res
 }
 
 
 function min () {
-let one = document.getElementById("een").value;
-let two = document.getElementById("twee").value;
-let doc = document.getElementById("doc").innerHTML = Number(one) - Number(two);
 
-doc.innerHTML =  one
+  let one = document.getElementById("een").value;
+  let two = document.getElementById("twee").value;
+let c =  one +"-"+ two + "=";
+let res = Number(one) - Number(two);
+doc.innerHTML =   c  + res;
 }
 
 function keer () {
 let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
-let doc = document.getElementById("doc").innerHTML = Number(one) * Number(two);
-
-doc.innerHTML =  one
+let c =  one +"*"+ two + "=";
+let res = Number(one) * Number(two);
+doc.innerHTML =   c  + res;
 }
 
 function deel () {
 let one = document.getElementById("een").value;
 let two = document.getElementById("twee").value;
-let doc = document.getElementById("doc").innerHTML = Number(one) / Number(two);
-
-doc.innerHTML =  one
+let c =  one +"/"+ two + "=";
+let res = Number(one) / Number(two);
+doc.innerHTML =   c  + res;
 }

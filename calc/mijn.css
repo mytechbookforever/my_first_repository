@@ -1,9 +1,7 @@
 body {
 background: rgb(53, 108, 191);
 }
-::selection {
-  background: #ffb7b7;
-}
+
 .sel {
 background-color:#000;
 color:#fff;

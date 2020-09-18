@@ -75,5 +75,14 @@ doc.innerHTML = m;
 }
 }else {
 doc.innerHTML = "<p class='denied'>access denied</p>";
+setTimeout(function  () {
+setTimeout(time , 2000)
+doc.innerHTML = "<p class='denied'>access denied</p>";
+});
+
+
+function time(){
+doc.innerHTML = "<p</p>";
+}
 }
 }

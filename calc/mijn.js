@@ -73,5 +73,7 @@ if(m){
 if(!isNaN == true){
 doc.innerHTML = m;
 }
+}else {
+doc.innerHTML = "<p class='denied'>access denied</p>";
 }
 }

@@ -27,9 +27,36 @@ background:rgb(95, 175, 193);
 font-size: 2rem;
 
 }
+.denied {
+  background-color: rgb(201, 122, 122);
+  animation-name: denied;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  width:500px;
+  color:#fff;
+  font-size: 64px;
+}
+@keyframes denied{
+  0%   {background-color: rgb(255, 88, 88);
+  width:500px;
+  }
+    25%  {background-color: rgb(233, 122, 122);
+      width:700px;
+      font-size: 5rem
 
+    }
+    50%  {background-color: rgb(8, 19, 89);
+      color:#fff;
+      width:600px;
+      font-size: 3rem
 
+    }
+    100% {background-color: rgb(195, 111, 111);
+      width:500px;
+      font-size: 5rem;
 
+    }
+}
 .calc_result {
 font-size: 3rem;
 color:#fff;

@@ -60,3 +60,18 @@ function out (e, res) {
 let doc = document.getElementById("doc").innerHTML  = e + res;
 
 }
+
+
+
+function numcheck (m) {
+mess(!isNaN(event.key));
+return !isNaN(event.key);
+}
+
+function mess (m) {
+if(m){
+if(!isNaN == true){
+doc.innerHTML = m;
+}
+}
+}

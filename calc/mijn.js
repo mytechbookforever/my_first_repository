@@ -57,8 +57,10 @@ let res = Number(one) / Number(two);
 out(c , res);
 }
 function out (e, res) {
-let doc = document.getElementById("doc").innerHTML  = e + res;
 
+let doc = document.getElementById("doc");
+doc.classList.add("good");
+doc.innerHTML  = e + res;
 }
 
 
@@ -70,10 +72,14 @@ return !isNaN(event.key);
 
 function mess (m) {
 if(m){
+   color()
 if(!isNaN == true){
-doc.innerHTML = m;
+
+doc.innerHTML = m
+
 }
 }else {
+doc.classList.remove("good");
 doc.innerHTML = "<p class='denied'>access denied</p>";
 setTimeout(function  () {
 setTimeout(time , 2000)
@@ -85,4 +91,10 @@ function time(){
 doc.innerHTML = "<p</p>";
 }
 }
+}
+// setInterval(color , 10000)
+function color(){
+let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+
+document.body.style.backgroundColor = randomColor
 }

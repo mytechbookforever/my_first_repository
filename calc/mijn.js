@@ -24,7 +24,7 @@ min();
 }else if(this.value == "multiply"){
 keer();
 }else if(this.value == "divide"){
-deel();  
+deel();
 }
 }//onclick end
 }//for llop end
@@ -150,8 +150,8 @@ if(ja == "ja"){
 
 function dutch () {
 let user_nl;
-user_nl = prompt("wil je nederlands tik ja");
-if(user_nl == "ja"){
+user_nl = prompt("wil je nederlands tik nl for english write en");
+if(user_nl == "nl"){
 localStorage.setItem("oke", user_nl)
 document.querySelector(".add_text").innerHTML = "plus";
 document.querySelector(".subtract_text").innerHTML = "min";
@@ -161,5 +161,8 @@ document.querySelector(".nl_color").value = "wil je een willekeurig kleur";
 document.querySelector(".nl_nl").value = "wil je nederlands";
 
 
+}else if(user_nl == "en"){
+localStorage.removeItem("oke");
+location.reload(true)
 }
 }

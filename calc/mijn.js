@@ -98,24 +98,31 @@ val_user = localStorage.getItem("user");
 }
 function user_btn () {
 let userg = function (){
+// switch en nl make it
 let user = prompt("do you want random color tap yes else write something else");
-let local = localStorage.setItem("user" , user)
+let local = localStorage.setItem("user" , user);
 return user;
 }
 
 val_user = userg();
 }
 function color(){
-
+  var x = Math.floor(Math.random() * 256);
+  var y = Math.floor(Math.random() * 256);
+  var z = Math.floor(Math.random() * 256);
+  // var bgColor = "rgb(" + x + "," + y + "," + z + ")";
 let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
 if(val_user == "yes"){
-document.body.style.backgroundColor = randomColor
+document.body.classList.remove("test")
+document.body.style.backgroundImage = "linear-gradient(rgba("+x+", "+y+", "+z+", 0.6), rgba(108, 162, 200, 0.53)), url('1.jpg')";
+document.body.style.backgroundSize = "cover"
+
 }else {
 document.body.style.backgroundColor = "";
 }
 }
 
-
+//document.getElementsByTagName("body")[0].style.backgroundImage = 'linear-gradient(45deg, rgb(' + lessOne + ',' + lessTwo + ',' + lessThree + '), rgb(' + one + ',' + two + ',' + three + '), rgb(' + moreOne + ',' + moreTwo + ',' + moreThree + '))';
 function deleteUser() {
 localStorage.removeItem("user");
 localStorage.removeItem("oke");
@@ -127,6 +134,8 @@ if(ja == "ja"){
   document.querySelector(".subtract_text").innerHTML = "min";
   document.querySelector(".multiply_text").innerHTML = "keer";
   document.querySelector(".divide_text").innerHTML = "deel";
+  document.querySelector(".nl_color").value = "wil je een willekeurig kleur";
+  document.querySelector(".nl_nl").value = "wil je nederlands";
 }
 
 
@@ -140,5 +149,9 @@ document.querySelector(".add_text").innerHTML = "plus";
 document.querySelector(".subtract_text").innerHTML = "min";
 document.querySelector(".multiply_text").innerHTML = "keer";
 document.querySelector(".divide_text").innerHTML = "deel";
+document.querySelector(".nl_color").value = "wil je een willekeurig kleur";
+document.querySelector(".nl_nl").value = "wil je nederlands";
+
+
 }
 }

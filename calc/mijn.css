@@ -46,10 +46,14 @@ font-size: 2rem;
   font-size: 64px;
 }
 
-.pos_btn {
+.pos_btn_1 {
 position:absolute;
 left:50vw;
 
+}
+.pos_btn_2 {
+  position:absolute;
+  left:70vw;
 }
 .btn_style {
 background:rgb(215, 136, 136);

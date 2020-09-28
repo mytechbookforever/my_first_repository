@@ -93,9 +93,13 @@ doc.innerHTML = "<p</p>";
 }
 }
 let val_user;
+if(val_user == null){
+val_user = localStorage.getItem("user");
+}
 function user_btn () {
 let userg = function (){
-let user = prompt("user");
+let user = prompt("do you want random color tap yes else write something else");
+let local = localStorage.setItem("user" , user)
 return user;
 }
 
@@ -104,9 +108,15 @@ val_user = userg();
 function color(){
 
 let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-if(val_user == "ja"){
+if(val_user == "yes"){
 document.body.style.backgroundColor = randomColor
 }else {
 document.body.style.backgroundColor = "";
 }
+}
+
+
+function deleteUser() {
+localStorage.removeItem("user");
+location.reload(true)
 }

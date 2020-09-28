@@ -118,11 +118,27 @@ document.body.style.backgroundColor = "";
 
 function deleteUser() {
 localStorage.removeItem("user");
+localStorage.removeItem("oke");
 location.reload(true)
 }
+let ja = localStorage.getItem("oke");
+if(ja == "ja"){
+  document.querySelector(".add_text").innerHTML = "plus";
+  document.querySelector(".subtract_text").innerHTML = "min";
+  document.querySelector(".multiply_text").innerHTML = "keer";
+  document.querySelector(".divide_text").innerHTML = "deel";
+}
+
+
+
 function dutch () {
+let user_nl;
+user_nl = prompt("wil je nederlands tik ja");
+if(user_nl == "ja"){
+localStorage.setItem("oke", user_nl)
 document.querySelector(".add_text").innerHTML = "plus";
 document.querySelector(".subtract_text").innerHTML = "min";
 document.querySelector(".multiply_text").innerHTML = "keer";
 document.querySelector(".divide_text").innerHTML = "deel";
+}
 }

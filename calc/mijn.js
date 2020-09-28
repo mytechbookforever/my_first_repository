@@ -118,7 +118,7 @@ document.body.style.backgroundImage = "linear-gradient(rgba("+x+", "+y+", "+z+",
 document.body.style.backgroundSize = "cover"
 
 }else {
-document.body.style.backgroundColor = "";
+document.body.style.backgroundColor = "linear-gradient( rgba(12, 173, 186, 0.57), rgba(12, 173, 186, 0.57)), url('1.jpg')";
 }
 }
 

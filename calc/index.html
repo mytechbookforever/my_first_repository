@@ -4,14 +4,17 @@
 <link rel="stylesheet" href="mijn.css">
 </head>
 <body>
-<input type="button" onclick="user_btn()" class="pos_btn_1 btn_style" value="do you want a random color">
-<input type="button" onclick="deleteUser()" class="pos_btn_2 btn_style" value="reset">
+  <div class="btn">
+<input type="button" onclick="user_btn()" class="btn_style" value="do you want a random color">
+<input type="button" onclick="deleteUser()" class="btn_style" value="reset">
+<input type="button" onclick="dutch()"  class="btn_style"  value="want you dutch nl">
+</div>
 <form>
   <select class="sel" onchange="fun()" id="mySelect" size="4">
-    <option>add</option>
-    <option>subtract</option>
-    <option>multiply</option>
-    <option>divide</option>
+    <option class="add_text">add</option>
+    <option class="subtract_text">subtract</option>
+    <option class="multiply_text">multiply</option>
+    <option class="divide_text">divide</option>
   </select>
 </form>
 

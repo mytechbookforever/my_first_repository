@@ -46,15 +46,32 @@ font-size: 2rem;
   font-size: 64px;
 }
 
-.pos_btn_1 {
-position:absolute;
+.btn{
+position: absolute;
 left:50vw;
 
+
 }
+
+.btn input{
+margin-right: 40px;
+
+
+}
+/* .form {
+display: inline-block;
+} */
+/* .pos_btn_1 {
+margin-right: 5px;
+}
+
 .pos_btn_2 {
-  position:absolute;
-  left:70vw;
+
 }
+
+.pos_btn_3 {
+
+} */
 .btn_style {
 background:rgb(215, 136, 136);
 padding: 10px 20px;

@@ -120,3 +120,9 @@ function deleteUser() {
 localStorage.removeItem("user");
 location.reload(true)
 }
+function dutch () {
+document.querySelector(".add_text").innerHTML = "plus";
+document.querySelector(".subtract_text").innerHTML = "min";
+document.querySelector(".multiply_text").innerHTML = "keer";
+document.querySelector(".divide_text").innerHTML = "deel";
+}

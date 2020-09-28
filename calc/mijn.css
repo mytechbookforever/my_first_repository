@@ -45,6 +45,18 @@ font-size: 2rem;
   color:#fff;
   font-size: 64px;
 }
+
+.pos_btn {
+position:absolute;
+left:50vw;
+
+}
+.btn_style {
+background:rgb(215, 136, 136);
+padding: 10px 20px;
+border-radius: 40px;
+margin-top: 70px;
+}
 @keyframes denied{
   0%   {background-color: rgb(255, 88, 88);
   width:500px;

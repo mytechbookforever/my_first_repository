@@ -92,9 +92,21 @@ doc.innerHTML = "<p</p>";
 }
 }
 }
-// setInterval(color , 10000)
-function color(){
-let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+let val_user;
+function user_btn () {
+let userg = function (){
+let user = prompt("user");
+return user;
+}
 
+val_user = userg();
+}
+function color(){
+
+let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+if(val_user == "ja"){
 document.body.style.backgroundColor = randomColor
+}else {
+document.body.style.backgroundColor = "";
+}
 }

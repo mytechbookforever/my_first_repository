@@ -17,6 +17,14 @@ min();
 keer();
 }else if(this.value == "deel"){
 deel();
+}else if(this.value == "add"){
+plus();
+}else if(this.value == "subtract"){
+min();
+}else if(this.value == "multiply"){
+keer();
+}else if(this.value == "divide"){
+deel();  
 }
 }//onclick end
 }//for llop end

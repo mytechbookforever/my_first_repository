@@ -81,10 +81,16 @@ return !isNaN(event.key);
 function mess (m) {
 if(m){
    color()
+   // document.getElementById("een").value.length > 5
+let x1 = document.getElementById("een")
+let x2 = document.getElementById("twee")
+if(x1.value.length > 10 || x2.value.length > 10){
+x1.value = "";
+x2.value = "";
+doc.innerHTML = "<p class='denied'>not more then ten Numbers</p>";
 if(!isNaN == true){
-
 doc.innerHTML = m
-
+}
 }
 }else {
 doc.classList.remove("good");
@@ -142,7 +148,7 @@ if(ja == "nl"){
   document.querySelector(".subtract_text").innerHTML = "min";
   document.querySelector(".multiply_text").innerHTML = "keer";
   document.querySelector(".divide_text").innerHTML = "deel";
-  document.querySelector(".nl_color").value = "wil je een willekeurig kleur";
+  document.querySelector(".nl_color").value = "wil je een willekeurige kleur";
   document.querySelector(".nl_nl").value = "wil je nederlands";
 }
 
@@ -157,7 +163,7 @@ document.querySelector(".add_text").innerHTML = "plus";
 document.querySelector(".subtract_text").innerHTML = "min";
 document.querySelector(".multiply_text").innerHTML = "keer";
 document.querySelector(".divide_text").innerHTML = "deel";
-document.querySelector(".nl_color").value = "wil je een willekeurig kleur";
+document.querySelector(".nl_color").value = "wil je een willekeurige kleur";
 document.querySelector(".nl_nl").value = "wil je nederlands";
 
 

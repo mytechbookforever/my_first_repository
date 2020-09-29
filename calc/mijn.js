@@ -137,7 +137,7 @@ localStorage.removeItem("oke");
 location.reload(true)
 }
 let ja = localStorage.getItem("oke");
-if(ja == "ja"){
+if(ja == "nl"){
   document.querySelector(".add_text").innerHTML = "plus";
   document.querySelector(".subtract_text").innerHTML = "min";
   document.querySelector(".multiply_text").innerHTML = "keer";

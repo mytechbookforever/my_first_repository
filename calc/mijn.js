@@ -87,9 +87,15 @@ let x2 = document.getElementById("twee")
 if(x1.value.length > 10 || x2.value.length > 10){
 x1.value = "";
 x2.value = "";
+
 doc.innerHTML = "<p class='denied'>not more then ten Numbers</p>";
+setTimeout(function  () {
+setTimeout(time , 2000)
+doc.innerHTML = "<p class='denied'>not more then ten Numbers</p>";
+});
 if(!isNaN == true){
 doc.innerHTML = m
+
 }
 }
 }else {
@@ -101,9 +107,11 @@ doc.innerHTML = "<p class='denied'>access denied</p>";
 });
 
 
-function time(){
-doc.innerHTML = "<p</p>";
+
 }
+
+function time(){
+doc.innerHTML = "<p></p>";
 }
 }
 let val_user;

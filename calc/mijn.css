@@ -21,12 +21,14 @@ background: rgb(81, 210, 133);
 width:200px;
 }
 .sel {
-background-color:#000;
+background-color:rgba(0, 0, 0, 0.2);
 color:#fff;
 width:300px;
 text-align: center;
 height:16rem;
 font-size: 2rem;
+overflow: hidden;
+
 }
 option:checked {
     box-shadow: 0 0 10px 100px rgb(67, 221, 161) inset;
@@ -41,7 +43,7 @@ background:rgb(26, 109, 144);
 margin-top: 1.5rem;
 }
 input[type="text"] {
-background:rgb(95, 175, 193);
+background:rgba(93, 173, 193, 0.75);
 font-size: 2rem;
 
 }

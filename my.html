@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+ul {
+text-decoration: none;
+list-style-type: none;
+}
+</style>
+<body>
+<div>
+<input type="text" id="text">
+<input type="button" value="add"  id="btn">
+<ul id="list">
+
+</ul>
+</div>
+<script>
+
+
+btn.onclick = function () {
+  let li = document.createElement("li");
+  let list = document.getElementById("list");
+
+  let txt = document.getElementById("text").value;
+  if(txt == ""){
+
+}else {
+list.appendChild(li);
+li.appendChild(document.createTextNode(txt))
+}
+}
+
+
+
+
+</script>
+</body>
+</html>

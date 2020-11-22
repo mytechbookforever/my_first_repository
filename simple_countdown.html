@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<section class="lading">
+  <div class="landing-inner">
+  <!-- <img src="#" alt="#"> -->
+  <p>A social network for devloppers</p>
+  <h1 class="comingsoon">aftellen naar 2021</h1>
+    <h1 class="countdown">countdown</h1>
+  </div>
+</section>
+<script>
+let countdown = document.querySelector(".countdown");
+
+let launchDate = new Date("2021,1,1").getTime();
+
+let intvl = setInterval(function (){
+let now = new Date().getTime();
+let dis = launchDate - now
+let days = Math.floor(dis / (1000 *60 *60 * 24));
+let hours = Math.floor((dis % (1000 *60 *60 * 24))/(1000 *60 *60));
+let min = Math.floor((dis % (1000 *60 * 60))/(1000 *60));
+let sec = Math.floor((dis % (1000 *60))/1000);
+// console.log(dis++)
+
+countdown.innerHTML = days +" dagen "+ hours + " uren "+min+" min "+" sec " +sec
+
+},1000)
+
+
+</script>
+</body>
+</html>

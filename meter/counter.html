@@ -19,37 +19,42 @@
   </style>
 </head>
 <body>
-  <details>
-    <summary>heading</summary>
-    <p>mooi</p>
-  </details>
+
 <meter id="val" value="50" min="0" max="100"></meter>
 <div  id="number"></div>
-<progress></progress>
+
 <bdi></bdi>
+<input type="button" value="start download" onclick="myfun()">
 <script>
 let val =  document.getElementById("val").value = "0";
 let number = document.getElementById("number");
-setInterval(oke , 1000);
+let x;
+function myfun() {
+x = setInterval(oke , 100);
+}
+
 
 function oke () {
+
 val++;
 number.innerHTML = val;
+document.getElementById("val").value = val;
 if(val == 100){
-test();
 
-
-
-}
-let v = val
- document.getElementById("val").value = v;
-
-}
-function test() {
-clearInterval(val)
   number.innerHTML = "downloading done";
+   document.getElementById("val").value = "";
+   clearInterval(x);
 val = "";
+v = "";
+
 }
+
+
+
+return val;
+}
+
+
 </script>
 </body>
 </html>

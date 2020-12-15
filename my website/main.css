@@ -1,9 +1,5 @@
 
-*{
-padding: 0;
-margin:0;
-box-sizing: border-box;
-}
+
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;1,200;1,600&display=swap'); */
 
 
@@ -46,7 +42,7 @@ color: rgb(218, 111, 111);
 .icon a {
 color: rgba(218, 111, 111);
 }
-a:active {
+/* a:active {
 color:rgb(241, 129, 13)
 }
 .icon:hover  a {
@@ -54,7 +50,7 @@ color: rgba(94, 219, 233);
 }
 a:visited {
 color: rgba(83, 203, 152);
-}
+} */
 
 
 
@@ -169,6 +165,7 @@ animation-iteration-count: infinite;
 
 .item {
 width:400px;
+
 height:30px;
 background:red;
 padding:3rem;
@@ -209,28 +206,7 @@ top:50%;
 left:50%;
 transform: translate(-50% , -50%);
 }
-.nav_item {
-position:relative;
-width:150px;
-height:30px;
-text-align: center;
-background-color: red;
 
-margin-top:7px;
-}
-
-.nav__container {
-position:absolute;
-display: flex;
-gap:22px;
-top:3rem;
-left:50%;
-transform: translate(-50% , -50%);
-
-
-
-
-}
 
 .home > a  {
 color:rgb(223, 117, 108);

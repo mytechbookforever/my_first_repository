@@ -29,7 +29,13 @@ margin:0;
 box-sizing: border-box;
 }
 
-
+body {
+/* background-color:rgb(21, 35, 128) */
+/* rgb(183, 214, 237) */
+font-family: 'Nunito', sans-serif;
+font-weight: 700;
+font-size: 1.5rem;
+}
 .nav__container {
 position:absolute;
 display: flex;
@@ -43,6 +49,7 @@ transform: translate(-50% , -50%);
 
 .sub{
 display: none;
+
 }
 .test:hover .sub{
 display: block;

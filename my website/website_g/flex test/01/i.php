@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="main.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;1,200;1,600&display=swap" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,700;1,200;1,600&display=swap" rel="stylesheet"> -->
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <style>
@@ -38,7 +38,7 @@
     </div>
 
 <div class="flex_1">
-<div class="item item_2"><p class="content_p"><a href="content.html">content</a></p></div>
+<div class="item item_2"><p class="content_p"><a href="content.php">content</a></p></div>
 <div class="item item_1"><p class="content_p">css3</p></div>
 </div>
 <div class="flex_2">

@@ -206,7 +206,9 @@ top:50%;
 left:50%;
 transform: translate(-50% , -50%);
 }
-
+.item_a {
+text-decoration: none; 
+}
 
 .home > a  {
 color:rgb(223, 117, 108);

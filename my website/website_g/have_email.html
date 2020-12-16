@@ -1,4 +1,10 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
   <style>
    .txt {
     background:rgba(76, 169, 199, 0.62);
@@ -8,9 +14,10 @@
     font-size: 2rem;
    }
   </style>
-
+</head>
+<body>
 <div id="doc">0</div>
-<textarea name="" id="textarea" class="txt" placeholder="not more then 100 char" onkeydown="weg()" cols="40" rows="12"></textarea>
+<textarea name="" id="textarea" class="txt" placeholder="not more then 100 char" onkeydown="weg()" cols="100" rows="12"></textarea>
 <input type="button" onclick="lookUp()" value="find text">
 <div id="doc1"></div>
 <script>
@@ -56,3 +63,5 @@ let doc1 = document.getElementById('doc1').innerHTML += "<p class='txt_email'>" 
 
 
 </script>
+</body>
+</html>

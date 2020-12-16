@@ -38,7 +38,7 @@
     </div>
 
 <div class="flex_1">
-<div class="item item_2"><p class="content_p"><a href="content.php">content</a></p></div>
+<div class="item item_2"><p class="content_p"><a style="text-decoration: none; "class="item_a" href="content.php">content</a></p></div>
 <div class="item item_1"><p class="content_p">css3</p></div>
 </div>
 <div class="flex_2">

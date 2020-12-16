@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="content.css">
 </head>
 <body>
+
     <div class="content">
   <div class="flex">
   <ul class="nav__container">
@@ -30,7 +31,14 @@
   </div>
 
     <div class="text">
+
+
+
+
       <?php
+
+
+
 
 if(!empty($_GET["name"])){
      $dir = "inc";
@@ -40,15 +48,20 @@ if(!empty($_GET["name"])){
  if(in_array($name . "_in.php" , $folder)){
    include($dir . "/" . $name . "_in.php");
  }else {
-   echo "<h1>sorry page not found</h1>";
+   echo "<div class='container_not_found'>";
+
+
+   echo "<h1 class='text_not_found'>sorry page not found</h1>";
+   echo "<img class='not_found' src='img/lost-my-way.jpg'>";
+   echo "</div>";
  }
 
- }
+}
 
 ?>
-    </div>
-</div>
 
+</div>
+ </div>
 
 
 

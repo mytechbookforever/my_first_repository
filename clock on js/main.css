@@ -1,0 +1,45 @@
+*{
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+background-image: url("bg.jpg");
+background-color:rgb(6, 25, 51);
+background-size:cover;
+background-repeat: no-repeat;
+}
+#klok {
+background-color: rgba(148, 78, 66, 0.8);
+padding: 5rem 0;
+text-align: center;
+color:#fff;
+font-size: 3rem;
+width:70%;
+margin:0 auto;
+}
+.style_js {
+background-color:rgba(73, 137, 173, 0.5);
+color:rgb(222, 212, 74);
+padding:3rem 0;
+}
+.background_klok{
+background:rgba(0,0,0,0.7);
+width:100vw;
+}
+
+.center{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50% , -50%);
+}
+.mooi {
+background:transparent !important;
+}
+@media (max-width:800px){
+body {
+background:rgb(6, 25, 51);
+}
+}

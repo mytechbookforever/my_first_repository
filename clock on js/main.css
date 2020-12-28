@@ -10,7 +10,7 @@ background-color:rgb(6, 25, 51);
 background-size:cover;
 background-repeat: no-repeat;
 }
-#klok {
+.rand_style {
 background-color: rgba(148, 78, 66, 0.8);
 padding: 5rem 0;
 text-align: center;
@@ -28,12 +28,20 @@ padding:3rem 0;
 background:rgba(0,0,0,0.7);
 width:100vw;
 }
+.countdown {
+color:rgb(222, 212, 74);
+background-color:rgba(73, 137, 173, 0.5);
+padding-bottom: 3rem;
 
+}
 .center{
 position: absolute;
 top:50%;
 left:50%;
 transform: translate(-50% , -50%);
+}
+.pos_klok {
+/* position: relative; */
 }
 .mooi {
 background:transparent !important;
@@ -42,4 +50,15 @@ background:transparent !important;
 body {
 background:rgb(6, 25, 51);
 }
+}
+.pos_count {
+position:absolute;
+top:60vh;
+}
+/* .hidden_count {
+display: none;
+} */
+.btn {
+padding:0.5rem 2rem;;
+background-color: rgb(141, 222, 147)
 }

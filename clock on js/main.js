@@ -1,11 +1,41 @@
 let arr_dagen = ["zondag" , "maandag" , "dinsdag" , "woensdag" , "donderdag" , "vrijdag" , "zaterdag"];
 let arr_maand = ["jan" , "feb" , "maart" , "april" , "mei" ,"juni" , "juli" ,"aug" , "sep" , "okt" , "nov" , "dec"];
+let control = true;
+function del (){
+if(control){
+if(document.querySelector(".somedata") != null){
+document.querySelector("#countdown").remove();
+}
+control = false;
+}
+}
+function back () {
+ control = true
+if(control){
+if(document.querySelector(".somedata") != null){
+document.querySelector(".somedata").id = "countdown";
+
+
+ document.querySelector('.somedata').classList.add("rand_style");
+}else {
+location.reload(true)  
+}
+
+ }
+
+}
+
+
 document.getElementById("klok").addEventListener("click" , function (){
 document.getElementById('klok').classList.add("mooi");
+
+
+// document.querySelector(".somedata1").id = "klok";
 });
 
 document.getElementById("klok").addEventListener("dblclick" , function (){
 document.getElementById('klok').classList.remove("mooi");
+
 });
 let oke = setInterval(fun , 1000);
 function fun () {
@@ -28,3 +58,29 @@ function fun () {
   }
   document.getElementById("klok").innerHTML = "<div class='style_js'><p>het is vandaag " +arr_dagen[dag] +" de "+datum+"st "+arr_maand[maand]+" "+jaar+"</p>" +uur +"uur "+min +" min   "+ sec + " sec</div>";
 }
+
+let intvl
+let countdown = document.querySelector(".countdown");
+
+
+let launchDate = new Date("2021,1,1").getTime();
+
+intvl = setInterval(function (){
+
+let now = new Date().getTime();
+let dis = launchDate - now
+let days = Math.floor(dis / (1000 *60 *60 * 24));
+let hours = Math.floor((dis % (1000 *60 *60 * 24))/(1000 *60 *60));
+let min = Math.floor((dis % (1000 *60 * 60))/(1000 *60));
+let sec = Math.floor((dis % (1000 *60))/1000);
+
+// console.log(dis++)
+// document.querySelector.addEventListener("click" , function (){
+//
+// })
+
+if(document.getElementById("countdown")){
+document.getElementById("countdown").innerHTML = "<div  class='countdown'><hr>aftellen tot 2021  nog " + days +" dagen "+ hours + " uren "+min+" min "+" sec " +sec+ "</div>"
+}
+
+},1000)

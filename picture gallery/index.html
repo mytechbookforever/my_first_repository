@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="mijn.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <title>Document</title>
+  <style>
+   .popup {
+     width:200px;
+     height: 200px;
+     /* background:#ccc; */
+      background:rgb(190, 190, 190);
+     z-index: 10;
+     position: fixed;
+     left:35vw;
+     top:60vh;
+     transition: 2s all;
+   }
+
+   .fun {
+    color:#fff;
+    width:2rem;
+   }
+
+   .ads_wrapper {
+    width:100%;
+   }
+   .text {
+    text-align: center;
+    position: absolute;
+    top:5rem;
+    left:3rem;
+    color:rgb(214, 114, 114)
+   }
+   .on{
+    background: green;
+    width:100px;
+    display: block;
+    height: 3rem;
+        font-size: 2rem;
+        position: absolute;
+        top:70vh;
+   }
+   .off{
+    background: red;
+    width:100px;
+    display: block;
+    height: 3rem;
+    font-size: 2rem;
+    position: absolute;
+    top:60vh;
+   }
+  </style>
+</head>
+<body>
+
+
+<div id="popup"><span class="fun"></span>
+
+</div>
+  <div class="bg">
+
+</div>
+  <div class="wrapper">
+
+
+
+<section class="pos oke">
+  <div class="ads_wrapper">
+<img src="reclame.jpg" alt="" class="ads">
+
+  </div>
+
+  <button class="on" onclick="play();">on</button>
+  <button class="off" onclick="stop();">off</button>
+
+</section>
+<section class="pos oke1">
+
+</section>
+</div>
+<script src="mijn.js">
+
+</script>
+</body>
+</html>

@@ -9,13 +9,14 @@
 <body>
   <input type="text" id="search" value="">
 <p id="content">hallo world hoi hallo</p>
+<p id="found"></p>
 <script>
 let search_words = document.getElementById("search");
 let content = document.getElementById("content").innerText;
 
 search_words.addEventListener("keyup" , function () {
 if(content.includes(search_words.value)){
-console.log(this.value)
+document.getElementById("found").innerHTML = "i found this for you :" + this.value
 }
 });
 </script>

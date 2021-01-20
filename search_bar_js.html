@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="search" value="">
+<p id="content">hallo world hoi hallo</p>
+<script>
+let search_words = document.getElementById("search");
+let content = document.getElementById("content").innerText;
+
+search_words.addEventListener("keyup" , function () {
+if(content.includes(search_words.value)){
+console.log(this.value)
+}
+});
+</script>
+</body>
+</html>

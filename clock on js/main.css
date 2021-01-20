@@ -26,7 +26,9 @@ padding:3rem 0;
 }
 .background_klok{
 background:rgba(0,0,0,0.7);
-width:100vw;
+width:90vw;
+padding-bottom: 5rem;
+
 }
 .countdown {
 color:rgb(222, 212, 74);
@@ -43,6 +45,7 @@ transform: translate(-50% , -50%);
 .pos_klok {
 /* position: relative; */
 }
+
 .mooi {
 background:transparent !important;
 }
@@ -61,4 +64,13 @@ display: none;
 .btn {
 padding:0.5rem 2rem;;
 background-color: rgb(141, 222, 147)
+}
+.btn:focus {
+outline: none;
+border:none;
+}
+.happy  {
+text-align: center ;
+font-size: 3rem;
+color:rgb(132, 240, 123)
 }

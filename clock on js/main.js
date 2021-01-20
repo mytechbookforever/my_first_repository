@@ -18,7 +18,7 @@ document.querySelector(".somedata").id = "countdown";
 
  document.querySelector('.somedata').classList.add("rand_style");
 }else {
-location.reload(true)  
+location.reload(true)
 }
 
  }
@@ -56,14 +56,14 @@ function fun () {
   if(uur <= 9){
   uur = "0" + uur;
   }
-  document.getElementById("klok").innerHTML = "<div class='style_js'><p>het is vandaag " +arr_dagen[dag] +" de "+datum+"st "+arr_maand[maand]+" "+jaar+"</p>" +uur +"uur "+min +" min   "+ sec + " sec</div>";
+  document.getElementById("klok").innerHTML = "<div class='style_js'><p>het is vandaag " +arr_dagen[dag] +" "+datum+" "+ arr_maand[maand]+" "+jaar+"</p>" +uur +"uur "+min +" min   "+ sec + " sec</div>";
 }
 
 let intvl
 let countdown = document.querySelector(".countdown");
 
 
-let launchDate = new Date("2021,1,1").getTime();
+let launchDate = new Date("2022,1,1").getTime();
 
 intvl = setInterval(function (){
 
@@ -73,14 +73,27 @@ let days = Math.floor(dis / (1000 *60 *60 * 24));
 let hours = Math.floor((dis % (1000 *60 *60 * 24))/(1000 *60 *60));
 let min = Math.floor((dis % (1000 *60 * 60))/(1000 *60));
 let sec = Math.floor((dis % (1000 *60))/1000);
+if(days <= 0 && hours <= 0 && min <= 0 && sec <= 0){
+
+clearInterval(intvl);
+
+document.querySelector("#countdown").remove()
+document.querySelector(".happy").innerHTML = "happy New Year";
+
+}
 
 // console.log(dis++)
 // document.querySelector.addEventListener("click" , function (){
 //
 // })
+if(launchDate <= 0){
+
+document.querySelector(".countdown").textContent = "happy"
+}
+
 
 if(document.getElementById("countdown")){
-document.getElementById("countdown").innerHTML = "<div  class='countdown'><hr>aftellen tot 2021  nog " + days +" dagen "+ hours + " uren "+min+" min "+" sec " +sec+ "</div>"
+document.getElementById("countdown").innerHTML = "<div  class='countdown'>aftellen tot 2022  nog " + days +" dagen "+ hours + " uren "+min+" min "+" sec " +sec+ "</div>"
 }
 
 },1000)

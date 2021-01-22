@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <input id="search" type="text" onkeyup="filter()" placeholder="search bar">
+<ul id="menu">
+    <li><a href="#">list item 1</a></li>
+    <li><a href="#">list item 2</a></li>
+    <li><a href="#">list item 3</a></li>
+   <li><a href="#">list item 4</a></li>
+   <li><a href="#">list item 5</a></li>
+   <li><a href="#">list item 6</a></li>
+   <li><a href="#">list item 7</a></li>
+   <li><a href="#">list item 8</a></li>
+   <li><a href="#">list item 9</a></li>
+   <li><a href="#">een</a></li>
+  </ul>
+<script>
+function filter () {
+let input = document.getElementById("search");
+let filterval = input.value.toLowerCase();
+let ul = document.getElementById("menu");
+let li = ul.getElementsByTagName("li");
+
+for(let i = 0; i < li.length; i++){
+let a = li[i].getElementsByTagName("a")[0];
+if(a.innerHTML.toLowerCase().indexOf(filterval) > -1){
+li[i].style.display = "";
+}else {
+li[i].style.display = "none";
+}
+}
+}
+
+//i learn a lot if you keep writing i most  it multiple times written
+// for but all of the function have i learned on the course from udemy "the functions itself"
+// the code find your here  https://www.youtube.com/watch?v=Q_TplfrQlE0
+//thanks for the code 
+</script>
+</body>
+</html>

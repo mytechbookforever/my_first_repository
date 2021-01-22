@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Document</title>
 </head>
 <body>
@@ -13,10 +14,22 @@
 <script>
 let search_words = document.getElementById("search");
 let content = document.getElementById("content").innerText;
+let content_g = document.getElementById("content");
+let found = document.getElementById("found")
+found.addEventListener("click" , function (){
+  if(found.innerText.includes("hallo")){
+    setTimeout(function () {
+  location.href = "https://www.google.nl"
+
+},3000)
+  }
+});
 
 search_words.addEventListener("keyup" , function () {
 if(content.includes(search_words.value)){
-document.getElementById("found").innerHTML = "i found this for you :" + this.value
+let x =  this.value;
+content_g.style.display = "none";
+found.innerHTML = "i found this for you :" + "<a href='#'>"+x+"</a>"
 }
 });
 </script>

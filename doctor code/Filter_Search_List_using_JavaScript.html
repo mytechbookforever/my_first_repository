@@ -7,7 +7,7 @@
   <title>Document</title>
 </head>
 <body>
-  <input id="search" type="text" onkeyup="filter()" placeholder="search bar">
+  <input id="search" type="text"  placeholder="search bar">
 <ul id="menu">
     <li><a href="#">list item 1</a></li>
     <li><a href="#">list item 2</a></li>
@@ -21,7 +21,7 @@
    <li><a href="#">een</a></li>
   </ul>
 <script>
-function filter () {
+document.getElementById('search').addEventListener("keyup" , function(){
 let input = document.getElementById("search");
 let filterval = input.value.toLowerCase();
 let ul = document.getElementById("menu");
@@ -35,12 +35,13 @@ li[i].style.display = "";
 li[i].style.display = "none";
 }
 }
-}
+})
+
 
 //i learn a lot if you keep writing i most  it multiple times written
 // for but all of the function have i learned on the course from udemy "the functions itself"
 // the code find your here  https://www.youtube.com/watch?v=Q_TplfrQlE0
-//thanks for the code 
+//thanks for the code
 </script>
 </body>
 </html>
